@@ -9,9 +9,9 @@ import json
 
 class TestADNDb(unittest.TestCase):
     ADNDb = None
-    adn1 = ["atgcga", "cagtgc", "ttattt", "agacgg", "gcgtca", "tcactg"]
+    adn1 = ["ATGCGA", "CAGTGC", "TTATGT", "AGAAGG", "AGAAGG", "TCACTG"]
     hash_adn1 = 274368094279 #364697752066052461306429170069426344459438571043L 
-    adn2 = ["atgcga", "cagtgc", "ttatgt", "agaagg", "ccccta", "tcactg"]
+    adn2 = ["ATGCGA", "CAGTGC", "TTATGT", "AGAAGG", "AGAAGG", "TCACTG"]
 
     def setUp(self):
         # Esto crea todas las tablas

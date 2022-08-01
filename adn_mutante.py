@@ -7,12 +7,12 @@ class ADNException(Exception):
     pass
 
 def esMutante(adn):
-    letras_validas = "atcg"
+    letras_validas = "ATCG"
 
     #Inicialización de la estructura para el cálculo
     N = len(adn)
     if N < 4:
-        raise ADNException("Secuencia de ADN demasiado chica (N = " + str(N) + ")")
+        raise ADNException("Secuencia de ADN demasiado corta (N = " + str(N) + ")")
 
     secuencias = 0
     
@@ -114,7 +114,7 @@ def esMutante(adn):
     return False
 
 if __name__ == '__main__':
-    adn_test = ["atgcga", "cagtgc", "ttatgt", "agaagg", "ccccta", "tcactg"]
+    adn_test = ["ATGCGA", "CAGTGC", "TTATGT", "AGAAGG", "AGAAGG", "TCACTG"]
 
     print esMutante(adn_test)
 
